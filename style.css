@@ -1,0 +1,525 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+input.empty-field {
+  background: red;
+}
+
+.validation-text li {
+  list-style-type: none;
+  text-decoration: none;
+  font-size: small;
+  font-weight: bold;
+  padding: 3px;
+  color: red;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.sticky {
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.container {
+  margin-top: 100px;
+  position: relative;
+  background: #dff1ff;
+  margin-bottom: 30px;
+}
+
+.container-nav {
+  background-color: rgba(245, 245, 245, 0.85);
+  color: black;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-nav li {
+  list-style: none;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.container-nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.container-nav li:hover {
+  transform: scale(1.05);
+  transition: all .5s ease-in-out;
+}
+
+#logo {
+  margin-left: 50px;
+  width: 80px;
+  height: 80px;
+}
+
+.article-section {
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.article-section div {
+  height: auto;
+}
+
+.article-section p,
+h1 {
+  padding: 10px;
+  line-height: 1.5;
+}
+
+.text-container {
+  display: flex;
+}
+
+.float-container {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.float-child {
+  width: 50%;
+  float: left;
+  padding: 10px;
+}
+
+.float-child-item {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.slide-1 {
+  background: url('./img/1.jpg');
+}
+
+.slide-2 {
+  background: url('./img/2.jpg');
+}
+
+.slide-3 {
+  background: url('./img/3.jpg');
+}
+
+.slide {
+  width: 100%;
+  filter: opacity(80%);
+  filter: brightness(0.7);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.caption {
+  background: rgba(0, 0, 0, 0.03);
+  width: 50%;
+  margin-left: 10%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 40px 0px;
+}
+
+.caption h3 {
+  color: #fff;
+  text-align: left;
+  font-size: 40px;
+}
+
+.caption p {
+  max-width: 600px;
+  width: 90%;
+  margin: 0px auto;
+  color: #ccc;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+.caption button {
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 30px;
+  margin-right: 20px;
+  color: black;
+  background-color: white;
+  border-radius: 40px;
+  border: 3px solid white;
+  padding: 20px;
+}
+
+.caption button:hover {
+  transform: scale(1.2);
+  transition: all .4s ease-in-out;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 100;
+  background: rgba(0, 0, 0, .1);
+  border-radius: 50%;
+  transform: background 500ms;
+}
+
+.arrow img {
+  width: 50px;
+}
+
+.arrow:hover {
+  background: rgba(0, 0, 0, .4);
+}
+
+.l {
+  left: 0;
+}
+
+.r {
+  right: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+footer {
+  font-size: 1.5vh;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  background-color: rgb(11, 6, 31);
+  width: 100%;
+  height: auto;
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+footer p {
+  padding: 10px;
+  font-size: small;
+}
+
+footer h3 {
+  padding: 10px;
+}
+
+footer a:hover {
+  text-decoration: none;
+  padding: 5px;
+  color: black;
+  background-color: white;
+  border-radius: 40px;
+  border: 2px solid white;
+}
+
+.form-section-background {
+  background-color: rgba(187, 187, 187, 0.274);
+  margin-bottom: 30px;
+}
+
+.form-section {
+  padding: 20px 20px;
+  margin: auto;
+  width: 30%;
+  text-align: center;
+}
+
+.form-section h3 {
+  padding: 10px;
+}
+
+.form-section h4 {
+  padding: 10px;
+  color: rgb(157, 157, 157);
+}
+
+.form-section input {
+  padding: 10px;
+  margin: 5px 0px;
+}
+
+.form-section-button {
+  background-color: #0070f3;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 30px;
+  margin-right: 20px;
+  color: black;
+  background-color: white;
+  border-radius: 40px;
+  border: 3px solid white;
+  padding: 20px;
+}
+
+.form-section-button:hover {
+  background-color: #0070f3;
+  cursor: pointer;
+  padding: 10px;
+  color: black;
+  background-color: white;
+  border: 3px solid white;
+  transform: scale(1.2);
+  transition: all .2s ease-in-out;
+}
+
+.field-error {
+  border-color: red;
+}
+
+.validation-text {
+  font-size: small;
+  text-align: initial;
+}
+
+/* ********************** MEDIA QUERIES ********************************* */
+@media all and (max-width: 825px) {
+
+  body {
+    max-width: 100%;
+  }
+
+  .google-map {
+    display: none;
+  }
+
+  .sticky {
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+  }
+
+  .container {
+    margin-top: 110px;
+    position: relative;
+    background: #dff1ff;
+    margin-bottom: 30px;
+  }
+
+  .container-nav {
+
+    color: black;
+    max-width: auto;
+    height: auto;
+    padding: 10px;
+    position: relative;
+    text-align: right;
+    flex-direction: column;
+  }
+
+  .container-nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-nav li {
+    list-style: none;
+    width: 100%;
+    text-decoration: none;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .container-nav a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #logo {
+    margin-left: 50px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .slide {
+    filter: opacity(80%);
+    filter: brightness(0.7);
+
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  .caption {
+    background: rgba(0, 0, 0, 0.03);
+    width: 50%;
+    margin-left: 5%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 0px;
+  }
+
+  .caption h3 {
+    color: #fff;
+    text-align: left;
+    font-size: 30px;
+  }
+
+  .caption p {
+    max-width: 600px;
+    width: 100vh;
+    margin: 0px auto;
+    color: #ccc;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5em;
+  }
+
+  .caption button {
+    cursor: pointer;
+    padding: 5px;
+    margin-top: 30px;
+    margin-right: 5px;
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    border: 2px solid white;
+  }
+
+  .caption button:hover {
+    transform: scale(1.2);
+    transition: all .4s ease-in-out;
+  }
+
+  .float-child {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .float-child-item {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+  }
+
+  .float-container {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  img {
+    height: auto;
+    margin: auto;
+  }
+
+  footer {
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(auto-fit, minmax(1fr 1fr));
+  }
+
+  footer a {
+    text-decoration: none;
+    color: white;
+    padding: 1px;
+  }
+
+  footer p {
+    font-size: x-small;
+  }
+
+  footer h3 {
+    padding: 5px;
+    font-size: small;
+  }
+
+  footer a:hover {
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+    background-color: white;
+    border-radius: 40px;
+    border: 2px solid white;
+  }
+
+  .form-section-background {
+    background-color: rgba(187, 187, 187, 0.274);
+    margin-bottom: 10px;
+  }
+
+  .form-section {
+    padding: 20px 20px;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .form-section h3 {
+    padding: 10px;
+  }
+
+  .form-section h4 {
+    padding: 10px;
+    color: rgb(157, 157, 157);
+  }
+
+  .form-section input {
+    padding: 10px;
+    margin: 5px 0px;
+  }
+
+  iframe {
+    max-width: 100%;
+  }
+
+  .article-section {
+    width: 100%;
+    font-size: medium;
+    padding: 15px;
+  }
+
+  .article-section div {
+    width: 100%;
+    height: auto;
+  }
+
+  .article-section p,
+  h1 {
+    padding: 10px;
+    line-height: 1.5;
+  }
+
+  .text-container {
+    display: flex;
+  }
+}
