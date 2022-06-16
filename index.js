@@ -158,7 +158,7 @@ start();
 function submitForm(e, form) {
   e.preventDefault();
   if (!errorMessages) {
-    fetch('file.php', {
+    fetch('form.php', {
       method: 'post',
       body: JSON.stringify({ name: form.formName.value, lastName: form.formLastName.value, email: form.formEmail.value, message: form.formMessage.value })
     }).then(function (response) {
@@ -169,6 +169,6 @@ function submitForm(e, form) {
       alert('Błąd wysyłania formularza')
     });
   } else {
-    alert("Błędnie wypełiony")
+    alert("Błędnie wypełniony formularz")
   }
 }
