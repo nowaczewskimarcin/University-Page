@@ -95,13 +95,6 @@
     showErrorMessages();
   });
 
-  // wysylanie formularza
-
-  form.addEventListener("submit", e => {
-    e.preventDefault();
-    if (errorMessages.length !== 0)
-      console.log('wysłano formularz')
-  });
 
 })();
 
@@ -160,3 +153,22 @@ function start() {
   slide[current].style.display = 'block';
 }
 start();
+
+
+function submitForm(e, form) {
+  e.preventDefault();
+  if (!errorMessages) {
+    fetch('file.php', {
+      method: 'post',
+      body: JSON.stringify({ name: form.formName.value, lastName: form.formLastName.value, email: form.formEmail.value, message: form.formMessage.value })
+    }).then(function (response) {
+      return response.json();
+    }).then(function (data) {
+      alert('Wysłano formularz')
+    }).catch(function (err) {
+      alert('Błąd wysyłania formularza')
+    });
+  } else {
+    alert("Błędnie wypełiony")
+  }
+}
