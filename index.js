@@ -197,7 +197,7 @@ function next() {
   current++;
 
   slide[current].style.display = 'block';
-  slide[current].style.opacity = 0.4;
+  slide[current].style.opacity = 0.5;
 
   var x = 0.4;
   var intX = setInterval(function () {
@@ -217,7 +217,7 @@ function prev() {
   current--;
 
   slide[current].style.display = 'block';
-  slide[current].style.opacity = 0.4;
+  slide[current].style.opacity = 0.8;
 
   var x = 0.4;
   var intX = setInterval(function () {

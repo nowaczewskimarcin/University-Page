@@ -112,20 +112,19 @@ h1 {
 }
 
 .slide-1 {
-  background: url('./img/1.jpg');
-}
-
-.slide-2 {
   background: url('./img/2.jpg');
 }
 
+.slide-2 {
+  background: url('./img/1.jpg');
+}
+
 .slide-3 {
-  background: url('./img/3.jpg');
+  background: url('./img/liderzy.jpg');
 }
 
 .slide {
   width: 100%;
-  filter: opacity(80%);
   filter: brightness(0.7);
   height: 100vh;
   background-size: cover;
@@ -465,7 +464,6 @@ footer a:hover {
   }
 
   footer h3 {
-
     font-size: medium;
     background-color: #fff;
     color: black;
