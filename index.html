@@ -74,7 +74,7 @@
   <!-- ARTICLE SECTION-->
   <div class="article-section">
     <!-- ARTICLE 1-->
-    <div>
+    <div class="margin-article-section">
       <div class="float-container">
         <div class="float-child">
           <h1>Z kim?</h1>
@@ -100,10 +100,10 @@
       <!-- END ARTICLE 1-->
     </div>
     <!-- ARTICLE 2-->
-    <div>
+    <div class="margin-article-section">
       <div class="float-container">
         <div class="float-child float-child-item ">
-          <img style="width: 90%; height: 90%;"
+          <img
             src="https://thumbs.dreamstime.com/b/close-up-hands-businessman-partner-working-business-people-join-hand-handshake-together-start-work-city-town-background-163187051.jpg" />
         </div>
         <div class="float-child">
@@ -123,7 +123,7 @@
       <!-- END ARTICLE 2-->
     </div>
     <!-- ARTICLE 3-->
-    <div>
+    <div class="margin-article-section">
       <div class="float-container">
         <div class="float-child">
           <h1>Po co?</h1>
@@ -142,9 +142,9 @@
             poszerzenia
             swoich kompetncji. </p>
         </div>
-        <div class="float-child float-child-item ">
-          <iframe width="400" height="300" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player"
-            frameborder="0"
+        <div class="float-child float-child-item float-child-item--player">
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0"
+            modestbranding="1" rel="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         </div>
@@ -180,64 +180,67 @@
               rozumieniu ustawy z dnia 18 lipca 2002 roku o świadczenie usług drogą elektroniczną (Dz.U.2017.1219 t.j.)
               na podany adres e-mail na temat usług</p>
           </div>
-          <div">
+          <div>
             <button class="form-section-button" type="submit" id="submitForm">WYŚLIJ</button>
+          </div>
+        </form>
       </div>
-      </form>
     </div>
-  </div>
 
-  <!--END FORM SECTION-->
-  <!-- FOOTER START -->
-  <footer>
-    <div class="adress" style="text-align: center">
-      <h3>Adres</h3>
-      <p>ul.Głogowska 10</p>
-      <p>61-719 Poznań</p>
-      <p>tel. 61 27 11 000 </p>
-      <iframe class="google-map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2434.164147319979!2d16.9090482!3d52.4037012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045b331d9ad99d%3A0x55e48e4277af7b4a!2sG%C5%82ogowska%2010%2C%2061-001%20Pozna%C5%84!5e0!3m2!1spl!2spl!4v1655143575994!5m2!1spl!2spl"
-        width="200" height="200" style="border:0; border-radius: 55%;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div>
-      <h3>O nas</h3>
-      <p><a href="">Dlaczego CDV</a></p>
-      <p><a href="">Kadra naukowa</a></p>
-      <p><a href="">Dla mediów</a></p>
-      <p><a href="">Kontakt</a></p>
-    </div>
-    <div>
-      <h3>Dla kandydata</h3>
-      <p><a href="">Poradnik maturzysty</a></p>
-      <p><a href="">Rekrutacja</a></p>
-      <p><a href="">Kredyt studencki</a></p>
-      <p><a href="">Studia dla cudzoziemców</a></p>
-    </div>
-    <div>
-      <h3>Dla studentów</h3>
-      <p><a href="">Wirtualna uczelnia</a></p>
-      <p><a href="">Stypendia</a></p>
-      <p><a href="">Biuro karier</a></p>
-      <p><a href="">Studiuj tutaj</a></p>
-    </div>
-    <div>
-      <h3>Dla biznesu</h3>
-      <p><a href="">Współpraca z biznesem</a></p>
-      <p><a href="">EmontionsLAB</a></p>
-      <p><a href="">Wynajem sal</a></p>
-      <p><a href="">Znajdź pracownika</a></p>
-    </div>
-    <div>
-      <h3>Na skróty</h3>
-      <p><a href="">Aktualności</a></p>
-      <p><a href="">Wydarzenia</a></p>
-      <p><a href="">Konferencje</a></p>
-      <p><a href="">Blog</a></p>
-    </div>
-  </footer> <!-- END OF FOOTER -->
-  <script src="index.js">
-  </script>
+    <!--END FORM SECTION-->
+    <!-- FOOTER START -->
+    <footer>
+      <div>
+        <h3>Dla kandydata</h3>
+        <p><a href="">Poradnik maturzysty</a></p>
+        <p><a href="">Rekrutacja</a></p>
+        <p><a href="">Kredyt studencki</a></p>
+        <p><a href="">Studia dla cudzoziemców</a></p>
+      </div>
+      <div>
+        <h3>O nas</h3>
+        <p><a href="">Dlaczego CDV</a></p>
+        <p><a href="">Kadra naukowa</a></p>
+        <p><a href="">Dla mediów</a></p>
+        <p><a href="">Kontakt</a></p>
+      </div>
+      <div>
+        <h3>Dla studentów</h3>
+        <p><a href="">Wirtualna uczelnia</a></p>
+        <p><a href="">Stypendia</a></p>
+        <p><a href="">Biuro karier</a></p>
+        <p><a href="">Studiuj tutaj</a></p>
+      </div>
+      <div>
+        <h3>Dla biznesu</h3>
+        <p><a href="">Współpraca z biznesem</a></p>
+        <p><a href="">EmontionsLAB</a></p>
+        <p><a href="">Wynajem sal</a></p>
+        <p><a href="">Znajdź pracownika</a></p>
+      </div>
+      <div>
+        <h3>Na skróty</h3>
+        <p><a href="">Aktualności</a></p>
+        <p><a href="">Wydarzenia</a></p>
+        <p><a href="">Konferencje</a></p>
+        <p><a href="">Blog</a></p>
+      </div>
+      <div class="adress">
+        <h3>Adres</h3>
+        <p>ul.Głogowska 10</p>
+        <p>61-719 Poznań</p>
+        <p>tel. 61 27 11 000 </p>
+
+      </div>
+      <div>
+        <iframe class="google-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2434.164147319979!2d16.9090482!3d52.4037012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045b331d9ad99d%3A0x55e48e4277af7b4a!2sG%C5%82ogowska%2010%2C%2061-001%20Pozna%C5%84!5e0!3m2!1spl!2spl!4v1655143575994!5m2!1spl!2spl"
+          style="border:0; border-radius: 50%;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </footer> <!-- END OF FOOTER -->
+    <script src="index.js">
+    </script>
 </body>
 
 </html>

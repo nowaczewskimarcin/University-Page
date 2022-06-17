@@ -9,6 +9,11 @@ input.empty-field {
   background: red;
 }
 
+.margin-article-section {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
 .validation-text li {
   list-style-type: none;
   text-decoration: none;
@@ -88,10 +93,6 @@ h1 {
   line-height: 1.5;
 }
 
-.text-container {
-  display: flex;
-}
-
 .float-container {
   padding: 5px;
   display: flex;
@@ -135,7 +136,7 @@ h1 {
 
 .caption {
   width: 50%;
-  margin-left: 10%;
+  margin-left: 20%;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -187,7 +188,7 @@ h1 {
 }
 
 .arrow img {
-  width: 50px;
+  width: 60px;
 }
 
 .arrow:hover {
@@ -215,7 +216,7 @@ img {
 
 footer {
   font-size: 1.5vh;
-  padding: 20px;
+  padding: 40px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   background-color: rgb(11, 6, 31);
@@ -236,7 +237,7 @@ footer p {
 }
 
 footer h3 {
-  padding: 10px;
+  padding: 5px;
 }
 
 footer a:hover {
@@ -279,7 +280,8 @@ footer a:hover {
   padding: 15px;
   color: white;
   border-radius: 30px;
-  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .form-section-button:hover {
@@ -294,6 +296,11 @@ footer a:hover {
 .validation-text {
   font-size: small;
   text-align: initial;
+}
+
+.google-map {
+  width: 100%;
+  border-radius: 50%;
 }
 
 /* ********************** MEDIA QUERIES ********************************* */
@@ -353,18 +360,18 @@ footer a:hover {
     width: 120px;
     height: 120px;
     display: flex;
-    align-items: center;
+    text-align: center;
   }
 
   .logo-container {
     display: flex;
-    text-align: center;
+    /* text-align: center; */
   }
+
 
   .slide {
     filter: opacity(80%);
     filter: brightness(0.7);
-
     background-size: cover;
     background-position: center;
     position: relative;
@@ -373,7 +380,7 @@ footer a:hover {
 
   .caption {
     width: 50%;
-    margin-left: 5%;
+    margin-left: 20%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -397,14 +404,14 @@ footer a:hover {
   }
 
   .caption button {
+    width: 90%;
     cursor: pointer;
-    padding: 5px;
-    margin-top: 30px;
-    margin-right: 5px;
+    padding: 2px;
+    margin-top: 10px;
     color: black;
     background-color: white;
-    border-radius: 30px;
-    border: 2px solid white;
+    border-radius: 15px;
+    border: 1px solid white;
   }
 
   .caption button:hover {
@@ -458,8 +465,8 @@ footer a:hover {
   }
 
   footer h3 {
-    padding: 4px;
-    font-size: small;
+
+    font-size: medium;
     background-color: #fff;
     color: black;
   }
@@ -480,7 +487,7 @@ footer a:hover {
   .form-section {
     padding: 20px 20px;
     margin: auto;
-    width: 70%;
+    width: 90%;
     text-align: center;
   }
 
