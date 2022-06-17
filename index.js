@@ -2,7 +2,6 @@
   // //--------------------------------------              ---------------------///////////////////////////////////
   // const Form = document.forms['form'];
   // console.log(Form.elements);
-
   ///////////////             W A L I D A C J A     F O R M U L A R Z A         ///////////////
   const inputName = document.getElementById('firstName')
   const ValidationInfo = document.querySelector(".validation-text")
@@ -18,8 +17,7 @@
       ValidationInfo.appendChild(element);
     })
   }
-
-  // walidacja imienia
+// walidacja imienia
   inputName.addEventListener("input", e => {
     const val = inputName.value
     const regEx = /^[a-zA-Z ]{3,}$/g;
@@ -32,8 +30,7 @@
     }
     showErrorMessages();
   });
-
-  // walidacja nazwiska
+// walidacja nazwiska
   const LastName = document.getElementById('lastName')
 
   LastName.addEventListener("input", e => {
@@ -47,9 +44,8 @@
       errorMessages = new Set([...errorMessages].filter((message) => message !== errorMessage))
     }
     showErrorMessages();
-  });
-
-  // walidacja emalia
+  })
+// walidacja emalia
   const inputEmail = document.getElementById('userEmail')
 
   inputEmail.addEventListener("input", e => {
@@ -64,8 +60,7 @@
     }
     showErrorMessages();
   });
-
-  // walidacja wiadomosci uzytkownika
+// walidacja wiadomosci uzytkownika
   const userMessage = document.getElementById('userMessage')
 
   userMessage.addEventListener("input", e => {
@@ -80,9 +75,7 @@
     }
     showErrorMessages();
   });
-
-  // walidacja zaznaczenia checkboxa i wyslanie formularza
-
+// walidacja zaznaczenia checkboxa i wyslanie formularza
   const checkBox = document.getElementById('checkBox')
   checkBox.addEventListener("change", e => {
     const errorMessage = 'Zaakceptuj regulamin przed wysłaniem formularza';
@@ -94,6 +87,95 @@
     }
     showErrorMessages();
   });
+
+
+// const data = new URLSearchParams(new FormData(formElement));
+
+//   const xhr = new XMLHttpRequest();
+
+// //typ połączenia, url, czy połączenie asynchroniczne
+// xhr.open("POST", "empty.php", true);
+
+// xhr.send();
+
+
+//  const firstName = formData.get(formName)
+//  const lastName = formData.get(formName)
+//  const email = formData.get(formEmail)
+//  const message = formData.get(formMessage)
+
+
+const form = document.querySelector("form");
+const dataToSend = new FormData(form);
+ 
+// const form = document.getElementById('form');
+
+// form.addEventListener('submit', function (e) {
+//   e.preventDefault();
+
+// const formData = new FormData(this);
+ 
+// fetch('form.php', {
+//         body: formData,
+//         method: "post"
+//     }).then(function (response) {
+//       return response.text();
+//     }).then(function (text) {
+//       console.log(text);
+//     }).catch(function (error) {
+//       console.error(error);
+//     });
+//   });
+form.sendForm = (e) => {
+  console.log(dataToSend)
+   fetch('form.php', {
+    method: 'POST',
+    headers:{       'Content-Type': 'application/json'     },
+    body: JSON.stringify({ name: form.formName.value, lastName: form.formLastName.value, email: form.formEmail.value, message: form.formMessage.value })
+
+  }).then((res) => {
+    console.log(res)
+  }).catch((err) => 
+  console.log(err));
+}
+
+
+// const xhr = new XMLHttpRequest();
+// xhr.open("POST", "emty.php", true);
+// xhr.send(dataToSend);
+
+
+// const xhr = new XMLHttpRequest();
+// xhr.open("POST", "emty.php", true);
+// xhr.send(dataToSend);
+
+
+//ustawiam odpowiedni typ danych
+// xhr.setRequestHeader("Content-Type", "application/json");
+// xhr.send(dataToSend);
+
+// function submitForm(e, form) {
+//   e.preventDefault();
+//   if( ) {
+
+//   } else {
+//      if (!errorMessages) {
+//     fetch('form.php', {
+//       method: 'post',
+//       body: JSON.stringify({ name: form.formName.value, lastName: form.formLastName.value, email: form.formEmail.value, message: form.formMessage.value })
+//     }).then(function (response) {
+//       return response.json();
+//     }).then(function (data) {
+//       alert('Wysłano formularz')
+//     }).catch(function (err) {
+//       alert('Błąd wysyłania formularza')
+//     });
+//   } else {
+//     alert("Błędnie wypełniony formularz")
+//   }
+//   }
+ 
+// }
 
 
 })();
@@ -154,21 +236,25 @@ function start() {
 }
 start();
 
+// function submitForm(e, form) {
+//   e.preventDefault();
+//   if( ) {
 
-function submitForm(e, form) {
-  e.preventDefault();
-  if (!errorMessages) {
-    fetch('form.php', {
-      method: 'post',
-      body: JSON.stringify({ name: form.formName.value, lastName: form.formLastName.value, email: form.formEmail.value, message: form.formMessage.value })
-    }).then(function (response) {
-      return response.json();
-    }).then(function (data) {
-      alert('Wysłano formularz')
-    }).catch(function (err) {
-      alert('Błąd wysyłania formularza')
-    });
-  } else {
-    alert("Błędnie wypełniony formularz")
-  }
-}
+//   } else {
+//      if (!errorMessages) {
+//     fetch('form.php', {
+//       method: 'post',
+//       body: JSON.stringify({ name: form.formName.value, lastName: form.formLastName.value, email: form.formEmail.value, message: form.formMessage.value })
+//     }).then(function (response) {
+//       return response.json();
+//     }).then(function (data) {
+//       alert('Wysłano formularz')
+//     }).catch(function (err) {
+//       alert('Błąd wysyłania formularza')
+//     });
+//   } else {
+//     alert("Błędnie wypełniony formularz")
+//   }
+//   }
+ 
+// }

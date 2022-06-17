@@ -12,7 +12,7 @@
 <body>
 
   <div class="container-nav sticky">
-    <div> <img id="logo" src="img\POL_University_of_Warsaw_logo.svg.png" /></div>
+    <div class="logo-container"> <img id="logo" src="img\POL_University_of_Warsaw_logo.svg.png" /></div>
     <div style="display: flex; align-items: center">
       <ul>
         <li><a href="">I stopnia</a></li>
@@ -153,13 +153,14 @@
     </div>
   </div>
   <!-- END ARTICLE SECTION-->
+  </div>
   <!--FORM SECTION-->
   <div class="form-section-background">
     <div class="form-section">
       <h3>Nie znalazłeś odpowiedniego kontaktu?</h3>
       <h4>Skorzystaj z formularza.</h4>
       <div>
-        <form action="form.php" method="post" id="form">
+        <form id="form" action="#" onsubmit="sendForm(); return false">
           <div class="space-between">
             <input id="firstName" name="formName" required style="width:100%" type="text" placeholder="Imię" />
             <input id="lastName" name="formLastName" required style="width:100%;" type="text" placeholder="Nazwisko" />
@@ -173,25 +174,24 @@
           </ul>
           <div class="space-between">
             <input id="checkBox" type="checkbox" required name="checkbox" value="false" checked="false">
-            <p style="font-size: x-small;
-            text-align: initial;">Wyrażam zgodę na przesyłanie informacji handlowych za pomocą środków komunikacji
+            <p style="font-size: x-small; text-align: initial;">Wyrażam zgodę na przesyłanie informacji handlowych za
+              pomocą środków komunikacji
               elektronicznej w
               rozumieniu ustawy z dnia 18 lipca 2002 roku o świadczenie usług drogą elektroniczną (Dz.U.2017.1219 t.j.)
               na podany adres e-mail na temat usług</p>
           </div>
-          <div class="row">
-            <input class="form-section-button" name="formSubmit" type="submit" value="Wyślij" id="submit" />
-          </div>
-        </form>
+          <div">
+            <button class="form-section-button" type="submit" id="submitForm">WYŚLIJ</button>
       </div>
+      </form>
     </div>
-
-
-    <!--END FORM SECTION-->
   </div>
+
+  <!--END FORM SECTION-->
   <!-- FOOTER START -->
   <footer>
-    <div style="text-align: center">
+    <div class="adress" style="text-align: center">
+      <h3>Adres</h3>
       <p>ul.Głogowska 10</p>
       <p>61-719 Poznań</p>
       <p>tel. 61 27 11 000 </p>
