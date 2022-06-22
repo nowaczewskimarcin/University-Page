@@ -69,6 +69,7 @@ input.empty-field {
 .container-nav li:hover {
   transform: scale(1.05);
   transition: all .5s ease-in-out;
+  border-bottom: 0.1px ridge rgb(11, 6, 31)
 }
 
 #logo {
